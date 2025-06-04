@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revestir Sorocaba</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+  <!-- Cabeçalho -->
+<!-- Cabeçalho -->
+  <header class="cabecalho">
+  <div class="container">
+    <img src="assets/images/logo.png" alt="Logo da Revestir Sorocaba" class="logo">
+
+    <!-- Botão Hamburguer (Mobile) -->
+    <button class="menu-toggle" aria-label="Abrir ou fechar menu" onclick="document.querySelector('.menu-wrapper').classList.toggle('active')">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Menu de Navegação -->
+    <nav class="menu-wrapper">
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#fornecedores">Fornecedores</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <section class="hero" id="inicio">
+  <div class="hero-banner">
+    <div class="hero-content">
+      <h2>Seu ambiente, nossa dedicação!</h2>
+      <p class="frase-chamativa">
+        Solicite um orçamento e transforme seu ambiente em um espaço ainda mais sofisticado!
+      </p>
+      <a class="whatsapp-btn" href="https://wa.me/5515991064339" target="_blank" rel="noopener noreferrer">
+        Agende pelo WhatsApp
+      </a>
+    </div>
+  </div>
+  </section>
+
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <h2>Soluções em Piso Laminado, Piso Vinílico e Painel Ripado</h2>
+      <p>Com Instalação Profissional e Garantia de Qualidade</p>
+
+      <div class="grid">
+        <div class="produto">
+          <a href="#">
+            <img src="assets/images/painel-ripado.jpg" alt="Painel Ripado" />
+          </a>
+          <h3>Painel Ripado</h3>
+          <p>Tendência de decoração, fácil aplicação, elegância</p>
+        </div>
+
+        <div class="produto">
+          <a href="#">
+            <img src="assets/images/piso-vinilico.jpg" alt="Piso Vinílico" />
+          </a>
+          <h3>Piso Vinílico</h3>
+          <p>Estilos, durabilidade, aplicações</p>
+        </div>
+
+        <div class="produto">
+          <a href="#">
+            <img src="assets/images/piso-laminado.jpg" alt="Piso Laminado" />
+          </a>
+          <h3>Piso Laminado</h3>
+          <p>Estilos, durabilidade, aplicações</p>
+        </div>
+
+        <div class="produto">
+          <a href="#">
+            <img src="assets/images/rodape.jpg" alt="Rodapé" />
+          </a>
+          <h3>Rodapé</h3>
+          <p>Durabilidade, aplicações</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="produtos">
+  <h2>Painel Ripado</h2>
+  <div class="carrossel-painel-ripado">
+    <div class="slide-container">
+      <div class="produto">
+        <img src="assets/images/painel-ripado/painel-freijo.jpg" alt="Painel Ripado Freijó">
+        <h3>Freijó</h3>
+      </div>
+      <div class="produto">
+        <img src="assets/images/painel-ripado/painel-carvalho.jpg" alt="Painel Ripado Carvalho">
+        <h3>Carvalho</h3>
+      </div>
+      <div class="produto">
+        <img src="assets/images/painel-ripado/painel-tabaco.jpg" alt="Painel Ripado Tabaco">
+        <h3>Tabaco</h3>
+      </div>
+      <div class="produto">
+        <img src="assets/images/painel-ripado/painel-preto.jpg" alt="Painel Ripado Preto">
+        <h3>Preto</h3>
+      </div>
+      <div class="produto">
+        <img src="assets/images/painel-ripado/painel-mogno.jpg" alt="Painel Ripado Mogno">
+        <h3>Mogno</h3>
+      </div>
+      <div class="produto">
+        <img src="assets/images/painel-ripado/painel-azul.jpg" alt="Painel Ripado Azul">
+        <h3>Azul</h3>
+      </div>
+      <div class="produto">
+        <img src="assets/images/painel-ripado/painel-cinza.jpg" alt="Painel Ripado Cinza">
+        <h3>Cinza</h3>
+      </div>
+    </div>
+
+    <!-- Botões -->
+    <button class="prev" aria-label="Slide anterior">&#10094;</button>
+    <button class="next" aria-label="Próximo slide">&#10095;</button>
+
+    <!-- Indicadores -->
+    <div class="dots"></div>
+  </div>
+  </section>
+
+  <section class="produtos" id="instalacoes-painel">
+    <h2>Instalações Painel Ripado</h2>
+    <div class="carrossel-instalacoes-ripado">
+        <div class="slide-container">
+            <div class="produto">
+                <a href="assets/images/instalacoes-painel/painel-andorra-new.jpg" target="_blank">
+                    <img src="assets/images/instalacoes-painel/painel-andorra-new.jpg" alt="Painel Andorra New" />
+                </a>
+                <h3>Painel Andorra New</h3>
+            </div>
+            <div class="produto">
+                <a href="assets/images/instalacoes-painel/painel-freijo.jpg" target="_blank">
+                    <img src="assets/images/instalacoes-painel/painel-freijo.jpg" alt="Painel Freijó" />
+                </a>
+                <h3>Painel Tabaco</h3>
+            </div>
+            <div class="produto">
+                <a href="assets/images/instalacoes-painel/Painel-tabaco.jpg" target="_blank">
+                    <img src="assets/images/instalacoes-painel/Painel-tabaco.jpg" alt="Painel Tabaco" />
+                </a>
+                <h3>Painel Tabaco</h3>
+            </div>
+          
+        </div>
+        
+        <button class="prev" aria-label="Slide anterior">&#10094;</button>
+        <button class="next" aria-label="Próximo slide">&#10095;</button>
+    </div>
+    
+    <div class="dots"></div>
+  </section>
+
+  <section class="produtos">
+  <h2>Instalações Piso Laminado e Vinílico</h2>
+  <div class="carrossel-painel-ripado">
+    <div class="slide-container">
+      <div class="produto">
+        <a href="assets/images/instalacoes/andorra-new.jpg" target="_blank">
+          <img src="assets/images/instalacoes/andorra-new.jpg" alt="Andorra New" />
+        </a>
+        <h3>Andorra New</h3>
+      </div>
+      <div class="produto">
+          <a href="assets/images/instalacoes/cappuccino.jpg" target="_blank">
+            <img src="assets/images/instalacoes/cappuccino.jpg" alt="Cappuccino" />
+          </a>
+          <h3>Cappuccino</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/carvalho-canela.jpg" target="_blank">
+            <img src="assets/images/instalacoes/carvalho-canela.jpg" alt="Carvalho Canela" />
+          </a>
+          <h3>Carvalho Canela</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/Carvalho-Coimbra.jpg" target="_blank">
+            <img src="assets/images/instalacoes/Carvalho-Coimbra.jpg" alt="Carvalho Coimbra" />
+          </a>
+          <h3>Carvalho Coimbra</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/carvalho-maiorca.jpg" target="_blank">
+            <img src="assets/images/instalacoes/carvalho-maiorca.jpg" alt="Carvalho Maiorca" />
+          </a>
+          <h3>Carvalho Maiorca</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/carvalho-natural envernizado.jpg" target="_blank">
+            <img src="assets/images/instalacoes/carvalho-natural envernizado.jpg" alt="Carvalho Natural Envernizado" />
+          </a>
+          <h3>Carvalho Natural Envernizado</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/carvalho-new.jpg" target="_blank">
+            <img src="assets/images/instalacoes/carvalho-new.jpg" alt="Carvalho New" />
+          </a>
+          <h3>Carvalho New</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/carvalho-rustico.jpg" target="_blank">
+            <img src="assets/images/instalacoes/carvalho-rustico.jpg" alt="Carvalho Rústico" />
+          </a>
+          <h3>Carvalho Rústico</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/decape.jpg" target="_blank">
+            <img src="assets/images/instalacoes/decape.jpg" alt="Decape" />
+          </a>
+          <h3>Decape</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/elmo-natural.jpg" target="_blank">
+            <img src="assets/images/instalacoes/elmo-natural.jpg" alt="Elmo Natural" />
+          </a>
+          <h3>Elmo Natural</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/fresno-decape.jpg" target="_blank">
+            <img src="assets/images/instalacoes/fresno-decape.jpg" alt="Fresno Decape" />
+          </a>
+          <h3>Fresno Decape</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/kalahari.jpg" target="_blank">
+            <img src="assets/images/instalacoes/kalahari.jpg" alt="Kalahari" />
+          </a>
+          <h3>Kalahari</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/natural-oak.jpg" target="_blank">
+            <img src="assets/images/instalacoes/natural-oak.jpg" alt="Natural Oak" />
+          </a>
+          <h3>Natural Oak</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/noce-oro.jpg" target="_blank">
+            <img src="assets/images/instalacoes/noce-oro.jpg" alt="Noce Oro" />
+          </a>
+          <h3>Noce Oro</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/nogueira-malaga.jpg" target="_blank">
+            <img src="assets/images/instalacoes/nogueira-malaga.jpg" alt="Nogueira Malaga" />
+          </a>
+          <h3>Nogueira Malaga</h3>
+        </div>
+        <div class="produto">
+          <a href="assets/images/instalacoes/nogueira-natural.jpg" target="_blank">
+            <img src="assets/images/instalacoes/nogueira-natural.jpg" alt="Nogueira Natural" />
+          </a>
+          <h3>Nogueira Natural</h3>
+        </div>
+      </div>
+
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+
+      <!-- Bolinhas -->
+      <div class="dots"></div>
+    </div>
+  </div>
+  </section>
+
+     <section class="fornecedores" id="fornecedores">
+    <div class="container">
+      <h2>Fornecedores</h2>
+      <div class="logos-fornecedores">
+        <img src="assets/images/eucaflor-logo.png" alt="Eucaflor">
+        <img src="assets/images/durafloor-logo.png" alt="Durafloor">
+        <img src="assets/images/quickstep-logo.png" alt="Quick Step">
+        <img src="assets/images/singularfloor-logo.png" alt="Singular Floor">
+        <img src="assets/images/tarkett-logo.png" alt="Tarkett">
+        <img src="assets/images/arquitech-logo.png" alt="Arquitech">
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas" class="tira-duvidas">
+  <div class="container">
+    <h2>Dúvidas</h2>
+
+    <div class="accordion-box">
+      <h3>Diferenciais</h3>
+      <br>
+
+      <button class="accordion-toggle">Qual a diferença entre esses pisos?</button>
+      <div class="accordion-content">
+        Cada piso tem composição, acabamento e resistência diferentes. A escolha depende do ambiente e uso.
+      </div>
+
+      <button class="accordion-toggle">Qual o acabamento do piso laminado?</button>
+      <div class="accordion-content">
+        O laminado tem aparência uniforme e acabamento resistente.
+      </div>
+
+      <button class="accordion-toggle">Qual a diferença entre esses pisos com o da concorrência?</button>
+      <div class="accordion-content">
+        Os pisos que trabalhamos oferecem durabilidade superior, encaixe preciso e acabamento mais refinado.
+      </div>
+
+      <button class="accordion-toggle">Qual a vantagem do piso laminado?</button>
+      <div class="accordion-content">
+        Ele tem manutenção mais fácil, custo-benefício e é mais resistente a riscos.
+      </div>
+
+      <button class="accordion-toggle">Qual é o piso indicado para ambientes residenciais?</button>
+      <div class="accordion-content">
+        Os pisos laminados e vinílicos são ideais para residências, combinando beleza e praticidade.
+      </div>
+    </div>
+
+    <div class="accordion-box">
+      <h3>Limpeza e Manutenção</h3>
+      <br>
+
+      <button class="accordion-toggle">Como deve ser feita a limpeza dos pisos laminados?</button>
+      <div class="accordion-content">
+        Use vassoura de cerdas macias ou pano úmido bem torcido. Produtos neutros são os mais indicados.
+      </div>
+
+      <button class="accordion-toggle">A limpeza com pano úmido é proibida para pisos laminados?</button>
+      <div class="accordion-content">
+        Não é proibida, mas o pano deve estar apenas levemente úmido para evitar infiltrações.
+      </div>
+
+      <button class="accordion-toggle">O que fazer para manter conservadas as áreas encobertas com tapetes e passadeiras?</button>
+      <div class="accordion-content">
+        Remova os tapetes regularmente para ventilar o piso e evitar acúmulo de sujeira ou manchas.
+      </div>
+
+      <button class="accordion-toggle">O que fazer se uma criança riscar o piso laminado com caneta hidrográfica?</button>
+      <div class="accordion-content">
+        Use um pano com álcool ou produto de limpeza próprio para laminados, testando em uma área pequena primeiro.
+      </div>
+
+      <button class="accordion-toggle">Como remover as manchas mais difíceis?</button>
+      <div class="accordion-content">
+        Manchas resistentes podem ser removidas com álcool ou removedores específicos para pisos laminados.
+      </div>
+
+      <button class="accordion-toggle">Os pisos laminados suportam móveis com rodízios?</button>
+      <div class="accordion-content">
+        Sim, mas o ideal é usar rodízios de borracha ou proteger a base com tapetes.
+      </div>
+
+      <button class="accordion-toggle">O que acontece se alguém derramar água no piso laminado e ele não for seco rapidamente?</button>
+      <div class="accordion-content">
+        Pode ocorrer inchaço nas réguas. Por isso, a secagem deve ser imediata.
+      </div>
+
+      <button class="accordion-toggle">Os pisos recebem algum tratamento contra cupins?</button>
+      <div class="accordion-content">
+        Sim, todos os pisos são tratados contra pragas como cupins.
+      </div>
+
+      <button class="accordion-toggle">Os pisos laminados não riscam?</button>
+      <div class="accordion-content">
+        Eles têm resistência a riscos, mas não são 100% à prova. Evite arrastar móveis sem proteção.
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="sobre" id="sobre-nos">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>
+        A Revestir Sorocaba nasceu com o propósito de transformar ambientes, levando mais beleza, conforto e praticidade para a vida das pessoas. Desde o início, nossa missão sempre foi oferecer soluções modernas em Pisos Laminados, Pisos Vinílicos, Rodapés e Painéis Ripados, unindo qualidade, bom gosto e custo-benefício.
+
+        Com uma trajetória construída sobre os pilares da responsabilidade, profissionalismo e comprometimento, rapidamente nos tornamos referência no mercado de revestimentos na cidade de Sorocaba e em toda a região.
+        
+        Nos orgulhamos de contar com uma equipe formada por profissionais especializados e qualificados, que garantem não só a venda dos melhores produtos, mas também uma instalação precisa, limpa e com acabamento impecável.
+        
+        Nossa busca constante é por inovação e excelência, trazendo aos nossos clientes as tendências mais modernas do mercado, com materiais de alta durabilidade, beleza e funcionalidade.
+        
+        Além disso, prezamos pelo atendimento humanizado e transparente, com o compromisso de oferecer sempre os melhores preços e condições de pagamento, incluindo parcelamento em até 12x no cartão.
+        
+        Seja para sua casa, escritório ou espaço comercial, a Revestir Sorocaba está pronta para transformar seu ambiente e realizar o seu projeto dos sonhos.
+              </p>
+           </section>
+      </p>
+  </section> <br>
+
+  <footer id="contato" class="rodape">
+    <div class="container">
+        <address class="contato-info">
+            <p>
+                <i class="fa-solid fa-location-dot" style="margin-right: 8px;" aria-hidden="true"></i>
+                <strong>Endereço:</strong> Rua Maria Camargo, 104 – Sorocaba/SP
+            </p>
+            <p>
+                <i class="fa-brands fa-whatsapp" style="margin-right: 8px;" aria-hidden="true"></i>
+                <strong>Telefone:</strong> <a href="tel:+5515991064339">(15) 99106-4339</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope" style="margin-right: 8px;" aria-hidden="true"></i>
+                <strong>Email:</strong> <a href="mailto:revestirsorocaba@gmail.com">revestirsorocaba@gmail.com</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-instagram" style="margin-right: 8px;" aria-hidden="true"></i>
+                <strong>Instagram:</strong>
+                <a href="https://instagram.com/revestirsorocaba" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Instagram da Revestir Sorocaba">
+                   @revestirsorocaba
+                </a>
+            </p>
+        </address>
+        <div class="direitos">
+            <p>&copy; Revestir Sorocaba <span id="ano"></span>. Todos os direitos reservados.</p>
+        </div>
+    </div>
+  </footer>
+   
+  <a href="https://wa.me/5515991064339" target="_blank" class="whatsapp-icon" title="Fale conosco no WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
+
+  
