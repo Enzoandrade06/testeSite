@@ -1,0 +1,65 @@
+-- Banco de Dados: Revestir Sorocaba
+
+-- Cria o banco de dados (se ainda não existir)
+CREATE DATABASE IF NOT EXISTS revestir;
+USE revestir;
+
+-- Tabela de Informações da Loja
+CREATE TABLE IF NOT EXISTS loja (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  endereco VARCHAR(255),
+  whatsapp VARCHAR(20),
+  email VARCHAR(100),
+  instagram VARCHAR(100)
+);
+
+-- Inserir dados da loja (ajuste conforme necessário)
+INSERT INTO loja (nome, endereco, whatsapp, email, instagram) VALUES
+('Revestir Sorocaba', 'Rua Exemplo, 123 - Sorocaba/SP', '(15) 99999-9999', 'contato@revestirsorocaba.com', 'https://www.instagram.com/revestirsorocaba');
+
+-- Tabela de Fornecedores
+CREATE TABLE IF NOT EXISTS fornecedores (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL
+);
+
+-- Tabela de Produtos
+CREATE TABLE IF NOT EXISTS produtos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  descricao TEXT,
+  imagem VARCHAR(255),
+  id_fornecedor INT,
+  FOREIGN KEY (id_fornecedor) REFERENCES fornecedores(id) ON DELETE SET NULL
+);
+
+-- Tabela de Instalações
+CREATE TABLE IF NOT EXISTS instalacoes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  tipo ENUM('Piso Laminado', 'Piso Vinílico', 'Painel Ripado') NOT NULL,
+  imagem VARCHAR(255),
+  descricao TEXT
+);
+
+-- Exemplo de fornecedores
+INSERT INTO fornecedores (nome) VALUES
+('Eucaflor'),
+('Durafloor'),
+('Quick Step'),
+('Singular Floor'),
+('Tarkett'),
+('Arquitech');
+
+-- Exemplo de produtos
+INSERT INTO produtos (nome, descricao, imagem, id_fornecedor) VALUES
+('Andorra', 'Descrição do Andorra', 'assets/images/andorra.jpg', 1),
+('Cappuccino', 'Descrição do Cappuccino', 'assets/images/cappuccino.jpg', 1),
+('Tabaco', 'Descrição do Tabaco', 'assets/images/tabaco.jpg', 2),
+('Carvalho', 'Descrição do Carvalho', 'assets/images/carvalho.jpg', 2);
+
+-- Exemplo de instalações
+INSERT INTO instalacoes (nome, tipo, imagem, descricao) VALUES
+('Instalação Andorra New', 'Piso Laminado', 'assets/images/instalacoes/andorra-new.jpg', 'Instalação do piso Andorra New'),
+('Instalação Painel Freijó', 'Painel Ripado', 'assets/images/instalacoes-painel/painel-freijo.jpg', 'Painel ripado na cor Freijó');

@@ -1,0 +1,8 @@
+# Bloquear acesso direto a arquivos .sql e .zip
+<FilesMatch "\.(sql|zip)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Impedir listagem de diretórios
+Options -Indexes
